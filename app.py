@@ -5,9 +5,6 @@ from itertools import product
 
 st.set_page_config(page_title="NBA playoff lineups", page_icon=":material/sports_basketball:", layout="wide")
 
-conf_series = pd.read_csv("data/conferences.csv", index_col=0).squeeze()
-abbr_series = pd.read_csv("data/NBA-NameReplacements.csv", index_col=0).squeeze()
-
 def combine_names(df, col_first, col_last, col_new="Name"):
     '''Create a new "Name" column that holds both the first and last names'''
     df = df.copy()
