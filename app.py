@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from itertools import product
 
-st.set_page_config(page_title="NBA playoff lineups", page_icon=":material/sports_basketball:", layout="wide")
+st.set_page_config(page_title="NBA playoff teams", page_icon=":material/sports_basketball:", layout="wide")
 
 abbr_series = pd.read_csv("data/NBA-NameReplacements.csv", index_col=0).squeeze()
 
